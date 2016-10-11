@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.col-content {
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  position: relative;
+}
+
+.col-title {
+  float: right;
+  text-align: center;
+  border: 1px solid black;
+  width: 30%;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  padding-top: 2px;
+  padding-bottom: : 2px;
+}
+
+.col-text {
+  margin-top: 20px;
+}
+
+.col-title.chicken {
+    background-color: orange;
+}
+
+.col-title.beef {
+    background-color: brown;
+    color: white;
+}
+
+.col-title.sushi {
+    background-color: pink;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
